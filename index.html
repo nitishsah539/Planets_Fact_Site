@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Planets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h2>THE PLANETS</h2></div>
+        <div class="planets">
+  <a href="#" data-planet="mercury">MERCURY</a>
+  <a href="#" data-planet="venus">VENUS</a>
+  <a href="#" data-planet="earth">EARTH</a>
+  <a href="#" data-planet="mars">MARS</a>
+  <a href="#" data-planet="jupiter">JUPITER</a>
+  <a href="#" data-planet="saturn">SATURN</a>
+  <a href="#" data-planet="uranus">URANUS</a>
+  <a href="#" data-planet="neptune">NEPTUNE</a>
+</div>
+
+    </div>
+
+    <section>
+        <div class="left-section">
+            <img id="planet-img" src="images/earth.jpg" alt="Planet" />
+        </div>
+        <div class="right-section">
+            <h1 id="planet-name">EARTH</h1>
+            <p id="planet-desc">Loading...</p>
+            <p>Source: <a id="source-link" href="#" target="_blank">Wikipedia</a></p>
+
+            <div class="buttons">
+                <button onclick="changeTab('overview')">01 OVERVIEW</button>
+                <button onclick="changeTab('structure')">02 INTERNAL STRUCTURE</button>
+                <button onclick="changeTab('surface')">03 SURFACE GEOLOGY</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info"><span>ROTATION</span><p id="rotation">0.99 DAYS</p></div>
+        <div class="info"><span>REVOLUTION</span><p id="revolution">365.26 DAYS</p></div>
+        <div class="info"><span>RADIUS</span><p id="radius">6,371 KM</p></div>
+        <div class="info"><span>TEMP</span><p id="temperature">16°C</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
